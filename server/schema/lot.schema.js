@@ -1,11 +1,9 @@
 const mongoose=require('mongoose')
-
+const fabricSchema=require('./fabric.schema')
 const lotSchema=mongoose.Schema({
     lotNumber:Number,
     partyName:String,
-    febric:[{
-        fabricAmount:Number
-}]    
+    febric:[fabricSchema]    
 })
 
 
